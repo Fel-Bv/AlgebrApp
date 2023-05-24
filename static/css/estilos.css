@@ -1,0 +1,107 @@
+/* ANIMACIONES */
+@keyframes agrandar-tarjeta {
+    100% {
+        width: 90vw;
+    }
+}
+@keyframes achicar-tarjeta {
+    100% {
+        width: 80vw;
+    }
+}
+
+
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --naranja: #ff9914;
+    --verde: #29bf12;
+    --azul: #08bdbd;
+
+    --oscuro: #001427;
+    --blanco: #E6FDFF;
+    --sombra: #aaa;
+
+}
+
+.naranja {background-color: var(--naranja); color: var(--oscuro);}
+.verde {background-color: var(--verde); color: var(--blanco);}
+.azul {background-color: var(--azul);}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* HEADER */
+header {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+}
+
+header .header-logo {
+    cursor: pointer;
+    height: 18vh;
+}
+
+
+/* PARTE MEDIA */
+main {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    display: flex;
+    padding: 2em;
+    height: 88vh;
+    width: 100vw;
+}
+
+main .intro {
+    align-content: center;
+    height: 50vh;
+}
+
+main .row {
+    margin: 1em 0;
+}
+
+main .tarjeta-info {
+    box-shadow: 10px 10px 25px var(--sombra);
+    border-radius: 12px;
+    height: 30vh;
+    width: 80vw;
+}
+main .tarjeta-info:hover {
+    animation: agrandar-tarjeta 1s;
+}
+
+main .tarjeta-info .texto {
+    padding: 2em;
+}
+
+main .tarjeta-info .texto h3 {
+    margin-bottom: .5em;
+    font-weight: 600;
+}
+
+main .tarjeta-info .imagen {
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+}
+
+main .tarjeta-info .imagen img {
+    width: calc(80vw / 12 * 4);
+    border-radius: 12px;
+    height: 30vh;
+}
