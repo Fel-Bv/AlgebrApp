@@ -14,14 +14,21 @@
   >
   <link rel="stylesheet" href="../static/css/estilos.css">
   <link rel="stylesheet" href="../static/css/tutorial.css">
+
+  <script src="../static/js/formulario.js" defer></script>
 </head>
 <body>
   <header>
     <img
+      class="logo-cetis"
+      src="../static/img/CETis.png"
+      alt="CETis No. 003"
+    >
+    <img
       class="header-logo"
       src="../static/img/logo header.png"
       alt="Logo AlgebrApp"
-      onclick="window.location.href = '../'"
+      onclick="window.location.href = '../index.html'"
     >
   </header>
 
@@ -39,13 +46,13 @@
         </li>
         <li>
           <a href="../tutorial/paso3.html">Resta</a>
-        </li>
+        </li><!--
         <li>
           <a href="../tutorial/paso4.html">División</a>
         </li>
         <li>
           <a href="../tutorial/paso5.html">Multiplicación</a>
-        </li>
+        </li>-->
       </ul>
     </aside>
 
@@ -83,6 +90,26 @@
         <b>[]</b> Corchete<br>
         <b>̣-</b> Vínculo<br>
       </p>
+
+      <div>
+        <br><hr><br>
+
+        <h2>Práctica Final</h2>
+        <form id="formulario-practica">
+          <h3>¿A qué se refiere el signo ">"?</h3>
+          <br>
+          <div>
+            <input type="radio" name="respuesta" value="incorrecto">igualdad          
+          </div>
+          <div>
+            <input type="radio" name="respuesta" value="correcto">Mayor Qué
+          </div>
+          <br>
+          <div>
+            <button type="submit" class="btn btn-primary">Listo</button>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 </body>

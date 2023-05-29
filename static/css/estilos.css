@@ -49,6 +49,13 @@ header {
     width: 100vw;
 }
 
+header .logo-cetis {
+    position: fixed;
+    height: 12vh;
+    left: 1em;
+    top: 0;
+}
+
 header .header-logo {
     cursor: pointer;
     height: 18vh;
