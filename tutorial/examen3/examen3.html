@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica</title>
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/estilos.css">
+  <link rel="stylesheet" href="../../static/css/examen.css">
+  <script src="../../static/js/examen-final.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Práctica</h1>
+  </header>
+
+  <main>
+    <div class="examen-final">
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>Realiza la siguiente resta de polinomios:</h3>
+          <p>
+            (6x+8y)-(3x-2y)
+          </p>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              -3x-10y
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              3x-10y
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado1" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>(4x³+2x²−4x+6) −(2x³+4x²+6x−7)−(2x³+4x²+6x−7)</h3>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              2x³−2x²−10x+13
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              2x³+2x²−10x-13
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado2" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>(−5x³+6x²−4x)−(3x³−5x²−6x)</h3>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              12x³+11x²+2x
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              −8x³+11x²+2x
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              8x³+12x²+2x
+          </a>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="ultima-pregunta"
+          >
+            Terminar
+          </button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado3" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

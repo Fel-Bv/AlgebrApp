@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica</title>
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/estilos.css">
+  <link rel="stylesheet" href="../../static/css/examen.css">
+  <script src="../../static/js/examen-final.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Práctica</h1>
+  </header>
+
+  <main>
+    <div class="examen-final">
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>Realiza la siguiente división de polinomios:</h3>
+          <p>
+            x²+8x+15÷x+5
+          </p>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              x-3
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              x+3
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado1" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>2x³+7x²+10x+8÷x+2</h3>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              2x²+3x+4
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              2x+3
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado2" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>x²−3x+6÷x+2</h3>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              x+5
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              x-5
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              5x+16
+          </a>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="ultima-pregunta"
+          >
+            Terminar
+          </button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado3" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

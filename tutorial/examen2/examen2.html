@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen 2</title>
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/estilos.css">
+  <link rel="stylesheet" href="../../static/css/examen.css">
+  <script src="../../static/js/examen-final.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Examen Final</h1>
+  </header>
+
+  <main>
+    <div class="examen-final">
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>¿Qué es un binomio?</h3>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              Dos expresiones
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado1">
+              Una expresión con dos terminos
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado1" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>Es la suma de los exponentes de las literales que conforman el término</h3>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              Grado Absoluto
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado2">
+              Grado Relativo
+          </a>
+
+          <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado2" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="pregunta">
+        <form class="formulario-examen">
+          <h3>Aquellos términos que tienen los mismos valores literales y exponentes</h3>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              Terminos Literales
+          </a>
+          <a
+            href="../../static/img/correcto.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              Terminos Semejantes
+          </a>
+          <a
+            href="../../static/img/equivocado.png"
+            class="respuesta-formulario"
+            target="resultado3">
+              Terminos Absolutos
+          </a>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="ultima-pregunta"
+          >
+            Terminar
+          </button>
+        </form>
+    
+        <div class="respuesta-examen">
+          <iframe name="resultado3" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

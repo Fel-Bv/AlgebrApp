@@ -6,16 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlgebrApp</title>
   <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-    rel="stylesheet"
-  >
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
   <link rel="stylesheet" href="../static/css/estilos.css">
   <link rel="stylesheet" href="../static/css/tutorial.css">
-
-  <script src="../static/js/formulario.js" defer></script>
+  <script src="../static/js/menu-click.js" defer></script>
 </head>
 <body>
   <header>
@@ -46,13 +40,13 @@
         </li>
         <li>
           <a href="../tutorial/paso3.html">Resta</a>
-        </li><!--
+        </li>
         <li>
           <a href="../tutorial/paso4.html">División</a>
         </li>
         <li>
           <a href="../tutorial/paso5.html">Multiplicación</a>
-        </li>-->
+        </li>
       </ul>
     </aside>
 
@@ -91,25 +85,18 @@
         <b>̣-</b> Vínculo<br>
       </p>
 
-      <div>
-        <br><hr><br>
+      <button
+        class="btn btn-primary mt-3"
+        onclick="
+        document.querySelector('.contenedor-examen').style.display = 'block'
+        "
+      >
+        Hacer Examen
+      </button>
+    </div>
 
-        <h2>Práctica Final</h2>
-        <form id="formulario-practica">
-          <h3>¿A qué se refiere el signo ">"?</h3>
-          <br>
-          <div>
-            <input type="radio" name="respuesta" value="incorrecto">igualdad          
-          </div>
-          <div>
-            <input type="radio" name="respuesta" value="correcto">Mayor Qué
-          </div>
-          <br>
-          <div>
-            <button type="submit" class="btn btn-primary">Listo</button>
-          </div>
-        </form>
-      </div>
+    <div class="contenedor-examen">
+      <iframe class="examen" src="./examen1/examen1.html" frameborder="0"></iframe>
     </div>
   </main>
 </body>
